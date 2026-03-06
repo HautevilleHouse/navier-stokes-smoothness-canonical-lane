@@ -1,0 +1,19 @@
+{
+  "extracted_source": "artifacts/constants_extracted.json",
+  "framework": "navier_stokes_3d",
+  "generated_utc": "2026-03-06T02:15:52Z",
+  "promoted_constants": {
+    "eps_coh": 0.0,
+    "kappa_compact": 0.8237232289950577,
+    "kappa_enstrophy": 1.0650499999999998,
+    "rho_rigidity": 1.083,
+    "sigma_capture": 1.0590000000000002,
+    "tau_floor": 1.017
+  },
+  "promoted_stitch": {
+    "sigma_star_can": 1.049
+  },
+  "registry_path": "artifacts/constants_registry.json",
+  "schema_version": "2026-03-05",
+  "stitch_path": "artifacts/stitch_constants.json"
+}

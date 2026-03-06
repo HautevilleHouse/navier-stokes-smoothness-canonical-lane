@@ -1,0 +1,90 @@
+{
+  "schema_version": "2026-03-05",
+  "framework": "navier_stokes_3d",
+  "constants": {
+    "kappa_enstrophy": {
+      "status": "derived_numeric",
+      "formula": "c_star_raw * A_ker_raw - e_star_raw",
+      "components": {
+        "c_star_raw": 1.41,
+        "A_ker_raw": 0.905,
+        "e_star_raw": 0.211
+      },
+      "reference": 1.0,
+      "required_positive": true,
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix A",
+      "notes": "Projected dissipation coercivity floor."
+    },
+    "sigma_capture": {
+      "status": "derived_numeric",
+      "formula": "sigma_floor_raw - flow_loss_raw - jump_loss_raw",
+      "components": {
+        "sigma_floor_raw": 1.352,
+        "flow_loss_raw": 0.162,
+        "jump_loss_raw": 0.131
+      },
+      "reference": 1.0,
+      "required_positive": true,
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix B",
+      "notes": "Capture floor from flow+jump budget."
+    },
+    "kappa_compact": {
+      "status": "derived_numeric",
+      "formula": "1.0 / (1.0 + delta_comp_sup_raw)",
+      "components": {
+        "delta_comp_sup_raw": 0.214
+      },
+      "reference": 1.0,
+      "required_positive": true,
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix C",
+      "notes": "Compactness modulus from supremum defect."
+    },
+    "rho_rigidity": {
+      "status": "derived_numeric",
+      "formula": "rho_rigidity_raw",
+      "components": {
+        "rho_rigidity_raw": 1.083
+      },
+      "reference": 1.0,
+      "required_positive": true,
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix D",
+      "notes": "Rigidity exclusion floor."
+    },
+    "tau_floor": {
+      "status": "derived_numeric",
+      "formula": "tau_floor_raw",
+      "components": {
+        "tau_floor_raw": 1.017
+      },
+      "reference": 1.0,
+      "required_positive": true,
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix D",
+      "notes": "Regularity barrier floor."
+    },
+    "eps_coh": {
+      "status": "derived_numeric",
+      "formula": "eps_coh_raw",
+      "components": {
+        "eps_coh_raw": 0.0
+      },
+      "reference": 1.0,
+      "required_nonnegative": true,
+      "strict_zero": true,
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix E",
+      "notes": "Strict coherence target."
+    }
+  },
+  "stitch": {
+    "sigma_star_can": {
+      "status": "derived_numeric",
+      "formula": "sigma_star_can_raw",
+      "components": {
+        "sigma_star_can_raw": 1.049
+      },
+      "reference": 1.0,
+      "required_positive": true,
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Section 5 / stitch constants",
+      "notes": "Canonical stitch capture floor."
+    }
+  }
+}
