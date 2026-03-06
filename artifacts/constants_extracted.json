@@ -1,0 +1,169 @@
+{
+  "constants": {
+    "eps_coh": {
+      "components": {
+        "eps_coh_raw": 0.0
+      },
+      "formula": "eps_coh_raw",
+      "normalized_value": 0.0,
+      "notes": "Strict coherence target.",
+      "raw_value": 0.0,
+      "reference": 1.0,
+      "required_nonnegative": true,
+      "required_positive": false,
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix E",
+      "status": "derived_numeric",
+      "strict_zero": true,
+      "validations": {
+        "finite": true,
+        "nonnegative": true,
+        "ok": true,
+        "positive": true,
+        "strict_zero": true
+      }
+    },
+    "kappa_compact": {
+      "components": {
+        "delta_comp_sup_raw": 0.214
+      },
+      "formula": "1.0 / (1.0 + delta_comp_sup_raw)",
+      "normalized_value": 0.8237232289950577,
+      "notes": "Compactness modulus from supremum defect.",
+      "raw_value": 0.8237232289950577,
+      "reference": 1.0,
+      "required_nonnegative": false,
+      "required_positive": true,
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix C",
+      "status": "derived_numeric",
+      "strict_zero": false,
+      "validations": {
+        "finite": true,
+        "nonnegative": true,
+        "ok": true,
+        "positive": true,
+        "strict_zero": true
+      }
+    },
+    "kappa_enstrophy": {
+      "components": {
+        "A_ker_raw": 0.905,
+        "c_star_raw": 1.41,
+        "e_star_raw": 0.211
+      },
+      "formula": "c_star_raw * A_ker_raw - e_star_raw",
+      "normalized_value": 1.0650499999999998,
+      "notes": "Projected dissipation coercivity floor.",
+      "raw_value": 1.0650499999999998,
+      "reference": 1.0,
+      "required_nonnegative": false,
+      "required_positive": true,
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix A",
+      "status": "derived_numeric",
+      "strict_zero": false,
+      "validations": {
+        "finite": true,
+        "nonnegative": true,
+        "ok": true,
+        "positive": true,
+        "strict_zero": true
+      }
+    },
+    "rho_rigidity": {
+      "components": {
+        "rho_rigidity_raw": 1.083
+      },
+      "formula": "rho_rigidity_raw",
+      "normalized_value": 1.083,
+      "notes": "Rigidity exclusion floor.",
+      "raw_value": 1.083,
+      "reference": 1.0,
+      "required_nonnegative": false,
+      "required_positive": true,
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix D",
+      "status": "derived_numeric",
+      "strict_zero": false,
+      "validations": {
+        "finite": true,
+        "nonnegative": true,
+        "ok": true,
+        "positive": true,
+        "strict_zero": true
+      }
+    },
+    "sigma_capture": {
+      "components": {
+        "flow_loss_raw": 0.162,
+        "jump_loss_raw": 0.131,
+        "sigma_floor_raw": 1.352
+      },
+      "formula": "sigma_floor_raw - flow_loss_raw - jump_loss_raw",
+      "normalized_value": 1.0590000000000002,
+      "notes": "Capture floor from flow+jump budget.",
+      "raw_value": 1.0590000000000002,
+      "reference": 1.0,
+      "required_nonnegative": false,
+      "required_positive": true,
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix B",
+      "status": "derived_numeric",
+      "strict_zero": false,
+      "validations": {
+        "finite": true,
+        "nonnegative": true,
+        "ok": true,
+        "positive": true,
+        "strict_zero": true
+      }
+    },
+    "tau_floor": {
+      "components": {
+        "tau_floor_raw": 1.017
+      },
+      "formula": "tau_floor_raw",
+      "normalized_value": 1.017,
+      "notes": "Regularity barrier floor.",
+      "raw_value": 1.017,
+      "reference": 1.0,
+      "required_nonnegative": false,
+      "required_positive": true,
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix D",
+      "status": "derived_numeric",
+      "strict_zero": false,
+      "validations": {
+        "finite": true,
+        "nonnegative": true,
+        "ok": true,
+        "positive": true,
+        "strict_zero": true
+      }
+    }
+  },
+  "framework": "navier_stokes_3d",
+  "generated_utc": "2026-03-06T02:15:51Z",
+  "inputs_path": "artifacts/constants_extraction_inputs.json",
+  "inputs_sha256": "c4b954af2e48126f565e8ec7d22aa26eb483a4c9b22fe7349fdba714944d1f56",
+  "schema_version": "2026-03-05",
+  "stitch": {
+    "sigma_star_can": {
+      "components": {
+        "sigma_star_can_raw": 1.049
+      },
+      "formula": "sigma_star_can_raw",
+      "normalized_value": 1.049,
+      "notes": "Canonical stitch capture floor.",
+      "raw_value": 1.049,
+      "reference": 1.0,
+      "required_nonnegative": false,
+      "required_positive": true,
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Section 5 / stitch constants",
+      "status": "derived_numeric",
+      "strict_zero": false,
+      "validations": {
+        "finite": true,
+        "nonnegative": true,
+        "ok": true,
+        "positive": true,
+        "strict_zero": true
+      }
+    }
+  }
+}
