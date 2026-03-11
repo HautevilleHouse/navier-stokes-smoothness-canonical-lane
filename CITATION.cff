@@ -1,0 +1,21 @@
+title: "3D Navier-Stokes Global Regularity via Dissipative Persistence"
+message: "If you use this workspace, cite the manuscript and theorem notes."
+type: software
+authors:
+  - name: "HautevilleHouse"
+date-released: 2026-03-05
+repository-code: "https://github.com/HautevilleHouse/navier-stokes-smoothness-canonical-lane"
+url: "https://github.com/HautevilleHouse/navier-stokes-smoothness-canonical-lane"
+license: None
+keywords:
+  - navier-stokes
+  - pde
+  - regularity
+  - fluid-dynamics
+  - reproducibility
+preferred-citation:
+  type: article
+  title: "3D Navier-Stokes Global Regularity via Dissipative Persistence"
+  authors:
+    - name: "HautevilleHouse"
+  date: 2026-03-05

@@ -1,0 +1,53 @@
+{
+  "constants": {
+    "eps_coh": {
+      "notes": "Promoted by extraction pipeline; status=derived_numeric; source_section=paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix E; raw=0.0, ref=1.0, formula=eps_coh_raw",
+      "source": "artifacts/constants_extracted.json#eps_coh",
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix E",
+      "status": "derived_numeric",
+      "theorem_level": true,
+      "value": 0.0
+    },
+    "kappa_compact": {
+      "notes": "Promoted by extraction pipeline; status=derived_numeric; source_section=paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix C; raw=0.8237232289950577, ref=1.0, formula=1.0 / (1.0 + delta_comp_sup_raw)",
+      "source": "artifacts/constants_extracted.json#kappa_compact",
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix C",
+      "status": "derived_numeric",
+      "theorem_level": true,
+      "value": 0.8237232289950577
+    },
+    "kappa_enstrophy": {
+      "notes": "Promoted by extraction pipeline; status=derived_numeric; source_section=paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix A; raw=1.0650499999999998, ref=1.0, formula=c_star_raw * A_ker_raw - e_star_raw",
+      "source": "artifacts/constants_extracted.json#kappa_enstrophy",
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix A",
+      "status": "derived_numeric",
+      "theorem_level": true,
+      "value": 1.0650499999999998
+    },
+    "rho_rigidity": {
+      "notes": "Promoted by extraction pipeline; status=derived_numeric; source_section=paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix D; raw=1.083, ref=1.0, formula=rho_rigidity_raw",
+      "source": "artifacts/constants_extracted.json#rho_rigidity",
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix D",
+      "status": "derived_numeric",
+      "theorem_level": true,
+      "value": 1.083
+    },
+    "sigma_capture": {
+      "notes": "Promoted by extraction pipeline; status=derived_numeric; source_section=paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix B; raw=1.0590000000000002, ref=1.0, formula=sigma_floor_raw - flow_loss_raw - jump_loss_raw",
+      "source": "artifacts/constants_extracted.json#sigma_capture",
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix B",
+      "status": "derived_numeric",
+      "theorem_level": true,
+      "value": 1.0590000000000002
+    },
+    "tau_floor": {
+      "notes": "Promoted by extraction pipeline; status=derived_numeric; source_section=paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix D; raw=1.017, ref=1.0, formula=tau_floor_raw",
+      "source": "artifacts/constants_extracted.json#tau_floor",
+      "source_section": "paper/NAVIER_STOKES_SMOOTHNESS_PREPRINT.md Appendix D",
+      "status": "derived_numeric",
+      "theorem_level": true,
+      "value": 1.017
+    }
+  },
+  "updated_at_utc": "2026-03-11T05:34:56Z"
+}
